@@ -1,0 +1,25 @@
+console.log("加载成功");
+
+require.config({
+	paths:{
+		jquery:"/public/js/jquery",
+		cookie:"/public/js/jquery.cookie",
+		slide:"/public/js/slide",
+		login:"/public/js/logining",
+		out:"/public/js/logOut",
+		shop:"/public/js/shoppingCart",
+		adds:"/public/js/successadd"
+	},
+	shim:{
+		//设置依赖关系
+		cookie:["jquery"]
+	}
+})
+require(["slide","login","out","shop","adds"],function(slide,log,out,shop,ad){
+	slide.sli($('#theuser'),$('.person'),300);
+	log.statu();
+	out.logOut();
+	shop.shopping();
+	shop.reload();
+	ad.adds();
+})

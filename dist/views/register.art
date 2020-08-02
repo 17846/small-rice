@@ -1,0 +1,272 @@
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>小米账号-注册</title>
+		<link rel="icon" type="/image/x-icon" href="/public/img/favicon.ico" >
+		<script src="/public/js/jquery.js" type="text/javascript" charset="utf-8"></script>
+		<style type="text/css">
+			body,html{
+				background-color: #f4f4f4;
+				color: #666;
+				
+			}
+			*{
+				margin: 0;
+				padding: 0;
+			}
+			#box{
+				width: 100%;
+				height: 100%;
+				background-color: #f4f4f4;
+				overflow: hidden;
+			}
+			.center{
+				width: 854px;
+				height: 621px;
+				margin: 0 auto;
+				text-align: center;
+				background-color: #FFFFFF;
+				margin-top: 88px;
+			}
+			img{
+				width: 49px;
+			}
+			.title{
+				font-size: 30px;
+				margin-top: 47px;
+			}
+			.reg{
+				width: 370px;
+				height: 446px;
+				position: relative;
+				margin-left: 227px;
+				margin-top: 40px;
+				text-align: left;
+				padding: 0 15px;
+			}
+			span{
+				display: block;
+			}
+			input{
+				width: 370px;
+				height: 40px;
+				border: 1px solid #e2e2e2;
+				margin: 10px 0;
+				font-size: 22px;
+				font-weight: 100;
+			}
+			input:focus{
+				border-color: #ff6700;
+				outline: none;
+			}
+			.tips{
+				font-size: 14px;
+				color: #747474;
+				margin-bottom: 15px;
+			}
+			#bto{
+				font-size: 16px;
+				color: white;
+				background-color: #ff6700;
+				border: none;
+				cursor: pointer;
+				margin-top: 30px;
+			}
+			.read{
+				margin-top: 80px;
+				font-size: 14px;
+				color: #bababa;
+				margin-left: 70px;
+			}
+			a{
+				font-size: 15px;
+				text-decoration: none;
+				font-weight: bold;
+				color: #262626;
+				
+			}
+			.footer{
+				width: 100%;
+				height: 70px;
+				position: absolute;
+				bottom: 0;
+				text-align: center;
+				padding-top: 80px;
+			}
+			#ga{
+				width: 20px;
+			}
+			.check{
+				width: 370px;
+				height: 25px;
+				line-height: 25px;
+				position: absolute;
+				top: 198px;
+				font-size: 14px;
+				display: none;
+			}
+			.check span{
+				border-radius: 50%;
+				background-color: #ff6700;
+				line-height: 18px;
+				font-weight: bold;
+				color: white;
+				margin-right: 5px;
+				width: 20px;
+				height: 20px;
+				text-align: center;
+			}
+			.error{
+				position:absolute;
+				top: -3px;
+				left: 26px;
+				color: #f66666;
+			}
+			#super{
+				width: 100%;
+				height: 100%;
+				background: rgba(106, 106, 106, 0.7);
+				position:absolute;
+				top: 0;
+				z-index: 999;
+				display:none;
+			}
+			#super .secend{
+				width: 320px;
+				height: 150px;
+				background-color: white;
+				margin: 20px auto;
+				background-color: #ffffff;
+				color: #000000;
+				padding: 10px;
+			}
+			.success{
+				width: 300px;
+				
+			}
+			.miao{
+				display: block;
+				font-size: 50px;
+				width: 320px;
+				text-align: center;
+			}
+			.dianji span{
+				display: inline;
+				font-size: 16px;
+				cursor: pointer;
+				color: #00D6B2;
+			}
+			.dianji a{
+				font-size: 16px;
+				font-weight: normal;
+				color: red;
+			}
+		</style>
+	</head>
+	<body>
+		<div id="box">
+			<div class="center">
+				<img src="/public/img/guanwang1.png" >
+				<p class="title">注册小米账号</p>
+				<div class="reg">
+						<span>电子邮箱</span>
+						<input type="text" name="" id="email" value="" />
+						<p class="tips">成功注册账号后，电子邮箱将不能更改</p>
+						<span>密码</span>
+						<input type="password" name="" id="ps" value="" />
+						<input type="button" name="" id="bto" value="立即注册" />
+					<div class="check">
+						<span>!</span>
+						<p class="error"></p>
+					</div>
+					<p class="read">已阅读并同意：小米 <a href="">用户协议</a> 和 <a href="">隐私政策</a> </p>
+				</div>
+			</div>
+			<div class="footer">
+				<p class="this">小米公司版权所有-<img src="/public/img/ghs.png" id="ga">京ICP备10046444-京公网安备11010802020134号-京ICP证110507号</p>
+			</div>
+		</div>
+		<div id="super">
+			<div class="secend">
+				<p class="success">注册成功，页面将在计时结束后跳转到登录页面......</p>
+				<span class="miao">5</span>
+				<p class="dianji">您可以点击<span class="returns">返回注册页面</span>或者<a href="/pass/login">直接跳转</a></p>
+			</div>
+		</div>
+		<script type="text/javascript">
+			let reg = /^[a-zA-Z0-9]{3,10}@[0-9a-zA-Z]{1,5}\.(com|cn)$/;
+			$('#bto').click(function(){
+				
+				if($('#email').val() == ''){
+					$('.check').css('display','block');
+					$('.error').html("请填写邮箱号");
+					return false;
+				}else if($('#ps').val() == ''){
+					$('.check').css('display','block');
+					$('.error').html("请输入密码");
+					return false;
+				}else if(!reg.test($('#email').val())){
+					$('.check').css('display','block');
+					$('.error').html("输入的邮箱有误");
+				}else if($('.check').css('display') == "block"){
+					return ;
+				}else{
+					$.ajax({
+						type:'post',
+						url:'/reg',
+						data:{
+							email:$('#email').val(),
+							password:$('#ps').val()
+						},
+						success:function(data){
+							if(data == "404"){
+								$('.check').css('display','block');
+								$('.error').html('该用户名已存在!');
+							}else if(data == "300"){
+								$('.check').css('display','block');
+								$('.error').html('注册失败!');
+							}else if(data == "200"){
+								setTimeout(function(){
+									$("#super").css("display","block");
+									$(".returns").click(function(){
+										$("#super").css("display","none");
+									})
+									let count = 5;
+									var timer = null;
+									timer = setInterval(function(){
+										$('.miao').html(count);
+										count--;
+										if(count < 0){
+											location.href = 'http://localhost:8888/pass/login';
+											clearInterval(timer);
+										}
+									},1000)
+								},2000)
+							}
+							
+							
+						},
+						error:function(err){
+							$('.check').css('display','block');
+							$('.error').html("未知错误!");
+						}
+					})
+				}
+			})
+			
+			$('#email').focus(function(){
+				$('.check').css('display','none');
+			})
+			$('#ps').focus(function(){
+				$('.check').css('display','none');
+			})
+			$('#ps').blur(function(){
+				let num = /^[0-9]+$/
+				if(num.test($('#ps').val())){
+					$('.check').css('display','block');
+					$('.error').html("密码不能为纯数字");
+				}
+			})
+		</script>
+	</body>
+</html>

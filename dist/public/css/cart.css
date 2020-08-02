@@ -1,0 +1,566 @@
+@charset "UTF-8";
+* {
+  padding: 0px;
+  margin: 0px; }
+
+ul, ol {
+  list-style: none; }
+
+a {
+  text-decoration: none; }
+
+body {
+  min-width: 1226px;
+  margin: 0 auto;
+  font: 14px/1.5 Helvetica Neue,Helvetica,Arial,Microsoft Yahei,Hiragino Sans GB,Heiti SC,WenQuanYi Micro Hei,sans-serif; }
+
+/*--------------- 顶部导航栏样式 -------------*/
+#xmHeader {
+  width: 100%;
+  height: 100px;
+  background-color: #ffffff;
+  border-bottom: 2px solid #FF6700;
+  position: relative;}
+  #xmHeader .container {
+    height: 100px;
+    line-height: 100px;
+    width: 1226px;
+    margin: 0 auto;
+    position: relative;}
+	  #xmHeader .container .alter1{
+		  float: right;
+	  }
+	  #xmHeader .container #theuser{
+		  margin-right: 0;
+		  display: flex;
+		  cursor: pointer;
+	  }
+	  .reserve{
+		  display: inline;
+		  position: absolute;
+		  left: -137px;
+          left: 1025px;
+          color: #757575;
+	  }
+	  #xmHeader .container #theuser:hover span{
+		  color: #ff6700!important;
+	  }
+#xmHeader .container .alter1 .save{
+  color: #b0b0b0;
+  position: absolute;
+  right: 20px;
+}
+#xmHeader .container .alter1 .save a{
+  color: #757575;
+  margin-left: 15px;
+}
+#xmHeader .container .alter1 .save a:hover{
+  color: #ff6700;
+}
+	  .person{
+		  position: absolute;
+		  width: 115px;
+		  height: 166px;
+		  background-color: #FFFFFF;
+		  z-index: 99999;
+		  top: 65px;
+		  right: 96px;
+		  box-shadow: 0 3px 4px rgba(0, 0, 0, 0.3);
+		  display: none;
+	  }
+	  .person ul{
+		  margin-top: 5px;
+	  }
+	  .person ul li{
+		  margin: 0!important;
+          line-height: 30px;
+          padding-left: 30px;
+	  }
+	  .person ul li a{
+		  width: 110px;
+		  text-align: center;
+		  color: #0f0f0f!important;
+		  height: 30px;
+	  }
+	  .person ul li a:hover{
+		  color: #ff6700!important;
+	  }
+	  #xmHeader .container #theuser .haha{
+		width: 90px;
+		overflow: hidden;
+		white-space: nowrap;
+		text-overflow: ellipsis;
+		text-align: center;
+	  }
+
+    #xmHeader .topNav .guanwang {
+      display: block;
+      width: 55px;
+      height: 55px;
+      top: 0;
+      margin-top: 22px;
+      cursor: pointer;
+      position: absolute;
+      background-image: url(../img/guanwang.png); }
+      #xmHeader .topNav .guanwang:hover {
+        transition: 0.05s;
+        background-position: -57px 0; }
+#xmHeader .topNav h2{
+  font-size: 28px;
+  font-weight: 400;
+  color: #424242;
+  position: absolute;
+  left: 100px;
+}
+#xmHeader .topNav .wenxing{
+  display: block;
+  position: absolute;
+  top: 5px;
+  left: 250px;
+  color: #757575;
+}
+#box{
+  width: 100%;
+  padding: 40px 0;
+  background: #f5f5f5;
+  position: relative;
+  top: 0px;
+}
+#box .buybus{
+  width: 1226px;
+  margin: 0 auto;
+}
+#box .buybus table thead{
+  height: 72px;
+  background: #FFFFFF;
+}
+#box .buybus table tr{
+  margin-bottom: 1px;
+  width: 1176px;
+  padding: 0 25px;
+  display: inline-block;
+  position: relative;
+}
+#box .buybus table tr img{
+  width: 80px;
+  height: 80px;
+}
+#box .buybus table  thead tr{
+  line-height: 72px;
+  font-size: 14px;
+}
+#box .buybus table thead tr td{
+  margin: 0;
+  font-weight: 200;
+}
+#choseAll,#chose{
+  width: 16px;
+  height: 16px;
+  line-height: 18px;
+  border: 1px solid #e0e0e0;
+  margin-right: 15px;
+  display: inline-block;
+  cursor: pointer;
+}
+
+#box .buybus tr td:nth-child(1){
+  text-align: left;
+  width: 85px;
+}
+#box .buybus tr td:nth-child(2){
+  text-align: left;
+  width: 120px;
+}
+#box .buybus tr td:nth-child(3){
+   text-align: left;
+  width: 380px;
+ }
+#box .buybus tr td:nth-child(4){
+  text-align: center;
+  width: 158px;
+}
+#box .buybus tr td:nth-child(5){
+  text-align: center;
+  width: 150px;
+}
+#box .buybus .count{
+  width: 148px;
+  height: 38px;
+  border: 1px solid #e0e0e0;
+  position: relative;
+}
+#box .buybus .count .deduce{
+  width: 38px;
+  height: 38px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: #FFFFFF;
+  display: block;
+  line-height: 38px;
+  text-align: center;
+  color: #757575;
+  font-size: 28px;
+  cursor: pointer;
+}
+#box .buybus tr td:nth-child(6){
+  text-align: center;
+  width: 210px;
+}
+#box .buybus .count .sum{
+  width: 72px;
+  height: 38px;
+  position: absolute;
+  top: 0;
+  left: 38px;
+  background: #FFFFFF;
+  text-align: center;
+  line-height: 38px;
+}
+#box .buybus tr td:nth-child(7){
+  text-align: center;
+  width: 73px;
+}
+#box .buybus tbody tr td:nth-child(6){
+  color: #FF6700;
+}
+#box .buybus .checked{
+  color: #FFFFFF;
+  background: #FF6700;
+  border-color: #FF6700;
+}
+#box .buybus tbody .icon-guanbi_huaban1{
+  cursor: pointer;
+  color: #757575;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  display: inline-block;
+  line-height: 24px;
+}
+#box .buybus tbody .icon-guanbi_huaban1:hover{
+  color: #FFFFFF;
+  background: #c50608;
+}
+#box .buybus table tbody tr{
+  padding: 15px 25px;
+  height: 85px;
+  line-height: 85px;
+  background: #FFFFFF;
+  font-size: 16px;
+}
+#box .buybus .count .addtion{
+  width: 38px;
+  height: 38px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  background: #FFFFFF;
+  display: block;
+  line-height: 38px;
+  text-align: center;
+  color: #757575;
+  font-size: 20px;
+  cursor: pointer;
+}
+#box .buybus .count .addtion:hover{
+  background: #b0b0b0;
+}
+#box .buybus .count .deduce:hover{
+  background: #b0b0b0;
+}
+#box .buybus table tbody h3{
+  font-size: 18px;
+  font-weight: 400;
+  white-space: nowrap;
+  width: 380px;
+  overflow-x: hidden;
+}
+#box .buybus table tbody a{
+  color: #424242;
+}
+#box .buybus .jiesuan{
+  width: 1190px;
+  height: 50px;
+  position: relative;
+  background: #FFFFFF;
+  top: 20px;
+  line-height: 50px;
+  padding-left: 36px;
+  color: #757575;
+}
+#box .buybus .jiesuan a{
+  color: #757575;
+}
+#box .buybus .jiesuan a:hover{
+  color: #ff6700;
+}
+#box .buybus .jiesuan i{
+  color: #FF6700;
+  font-style: normal;
+}
+#box .buybus .jiesuan .total{
+  margin-left: 15px;
+  padding-left: 15px;
+  border-left: 1px solid #eee;
+}
+#box .buybus .jiesuan .totalPrice{
+  position: absolute;
+  right: 250px;
+  color: #FF6700;
+}
+#box .buybus .jiesuan .totalPrice .price{
+  font-size: 30px;
+}
+#box .buybus .jiesuan .goPay{
+  float: right;
+  width: 200px;
+  height: 50px;
+  line-height: 50px;
+  font-size: 18px;
+  margin-left: 50px;
+  background: #FF6700;
+  color: #FFFFFF;
+  text-align: center;
+}
+#box .buybus .jiesuan .goPay:hover{
+  background: #d65e00;
+}
+
+#box .recommend{
+  width: 1226px;
+  height: 614px;
+  padding-top: 50px;
+  margin: 0 auto;
+  margin-top: 60px;
+  position: relative;
+  border-top: 1px solid #e0e0e0;
+}
+#box .recommend .title{
+  text-align: center;
+  height: 40px;
+  width: 482px;
+  display: block;
+  line-height: 40px;
+  background: #f5f5f5;
+  position: absolute;
+  font-size: 30px;
+  font-weight: 400;
+  color: #757575;
+  top: -20px;
+  left: 372px;
+}
+#box .recommend .ul{
+  width: 1226px;
+  height: 614px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+#box .recommend .ul li{
+  width: 234px;
+  height: 300px;
+  margin-bottom: 14px;
+  background: #FFFFFF;
+  position: relative;
+}
+#box .recommend .ul li img{
+  display: block;
+  margin: 40px auto 20px;
+  width: 140px;
+  height: 140px;
+}
+#box .recommend .ul li .name{
+  margin: 0 10px 10px;
+  height: 18px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  color: #333333;
+  text-align: center;
+}
+#box .recommend .ul li .price{
+  margin-bottom: 10px;
+  color: #ff6700;
+  text-align: center;
+}
+#box .recommend .ul li .good{
+  color: #757575;
+  text-align: center;
+  height: 21px;
+  position: relative;
+}
+#box .recommend .ul li .jiagou{
+  width: 234px;
+  height: 30px;
+  position: absolute;
+  text-align: center;
+  top: 300px;
+  opacity: 0;
+  transition: .2s;
+}
+#box .recommend .ul li .jiagou span{
+  display: inline-block;
+  border-color: #FF6700;
+  background: #FFFFFF;
+  color: #FF6700;
+  height: 28px;
+  font-size: 12px;
+  line-height: 28px;
+  width: 120px;
+  border: 1px solid;
+  cursor: pointer;
+}
+#box .recommend .ul li .jiagou span:hover{
+  background: #ff6700;
+  color: #FFFFFF;
+}
+#box .recommend .ul li .succ{
+  width: 234px;
+  height: 38px;
+  position: absolute;
+  text-align: center;
+  top: -10px;
+  color: #FFFFFF;
+  line-height: 38px;
+  background: #4f9d4f;
+  opacity: 0;
+  transition: .5s;
+}
+#box .recommend .ul li:hover .jiagou{
+  transform: translateY(-40px);
+  opacity: 1;
+}
+  /*--------------- 底部样式-------------*/
+#xmFooter {
+  height: 510px;
+  width: 1226px;
+  margin: 0 auto;
+  top: 0px;
+  position: relative; }
+  #xmFooter .server {
+    position: relative; }
+    #xmFooter .server .ul1 {
+      width: 1226px;
+      position: absolute;
+      top: 20px;
+      border-bottom: 1px solid #cccccc;
+      padding-bottom: 25px; }
+      #xmFooter .server .ul1 li:last-child {
+        border-right: none; }
+      #xmFooter .server .ul1 li {
+        float: left;
+        height: 26px;
+        width: 244px;
+        line-height: 26px;
+        font-size: 16px;
+        text-align: center;
+        border-right: 1px solid #cccccc; }
+        #xmFooter .server .ul1 li a {
+          color: #616161; }
+          #xmFooter .server .ul1 li a:hover {
+            color: #ff6923; }
+        #xmFooter .server .ul1 li span {
+          margin-right: 5px;
+          font-size: 22px; }
+  #xmFooter .table {
+    position: relative;
+    top: 95px;
+    left: -10px; }
+    #xmFooter .table thead {
+      font-size: 14px;
+      color: #424242;
+      display: block;
+      margin-bottom: 8px; }
+      #xmFooter .table thead tr {
+        text-align: left; }
+    #xmFooter .table tbody {
+      position: absolute; }
+      #xmFooter .table tbody tr {
+        width: 160px; }
+        #xmFooter .table tbody tr a {
+          font-size: 12px;
+          color: #757575; }
+          #xmFooter .table tbody tr a:hover {
+            color: #ff6923; }
+    #xmFooter .table .kefu {
+      width: 180px;
+      height: 120px;
+      position: absolute;
+      right: 0px;
+      top: 15px;
+      border-left: 1px solid #CCCCCC;
+      padding-left: 55px; }
+      #xmFooter .table .kefu .tel {
+        color: #ff6700;
+        font-size: 22px; }
+      #xmFooter .table .kefu .serverTime {
+        font-size: 12px; }
+      #xmFooter .table .kefu .btn {
+        width: 120px;
+        height: 30px;
+        display: block;
+        border: 1px solid #ff6700;
+        text-align: center;
+        margin-top: 5px;
+        margin-left: 13px;
+        font-size: 12px;
+        color: #ff6700;
+        margin-bottom: 5px; }
+        #xmFooter .table .kefu .btn:hover {
+          background-color: #ff6700;
+          color: #FFFFFF; }
+      #xmFooter .table .kefu .attention {
+        font-size: 12px;
+        color: #616161;
+        margin-left: 13px; }
+        #xmFooter .table .kefu .attention span {
+          font-size: 20px;
+          margin-right: 5px;
+          cursor: pointer; }
+          #xmFooter .table .kefu .attention span:hover {
+            color: #ff6700; }
+        #xmFooter .table .kefu .attention .icon-gongzhonghao:hover .weixin {
+          display: block; }
+        #xmFooter .table .kefu .attention .weixin {
+          width: 118px;
+          height: 118px;
+          display: block;
+          z-index: 22;
+          position: absolute;
+          left: 110px;
+          top: 122px;
+          background-image: url(../img/wx-img.png);
+          background-size: 118px;
+          display: none; }
+  #xmFooter .bottomNav {
+    width: 1226px;
+    position: absolute;
+    top: 285px; }
+    #xmFooter .bottomNav li {
+      float: left;
+      color: #757575; }
+      #xmFooter .bottomNav li span {
+        line-height: 17px;
+        font-size: 16px; }
+      #xmFooter .bottomNav li a {
+        margin: 0 6px;
+        color: #757575; }
+        #xmFooter .bottomNav li a:hover {
+          color: #ff6700; }
+  #xmFooter .end {
+    width: 1226px;
+    height: 130px;
+    position: relative;
+    top: 275px;
+    color: #333; }
+    #xmFooter .end a {
+      color: #757575; }
+      #xmFooter .end a:hover {
+        color: #ff6700; }
+    #xmFooter .end .truste {
+      margin-top: 18px;
+      width: 452px;
+      height: 62px;
+      display: block; }
+
